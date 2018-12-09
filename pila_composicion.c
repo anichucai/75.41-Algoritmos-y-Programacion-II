@@ -20,11 +20,11 @@ typedef struct composicion{
 
 composicion_t* composicion_crear(void){
 
-  composicion_t* composicion = malloc(sizeosf(composicion_t));
+  composicion_t* composicion = malloc(sizeof(composicion_t));
   if(!composicion) return NULL;
   
-  composicion->funciones = crear_pila();
-  if(!composicion->funciones){
+  composicion->pila = crear_pila();
+  if(!composicion->pila){
     free(composicion);
     return NULL;
   }
