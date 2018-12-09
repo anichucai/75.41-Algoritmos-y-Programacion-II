@@ -25,6 +25,7 @@ bool _es_piramidal(pila_t* pila, bool res){
 }
 
 bool es_piramidal(pila_t* pila){
+  
   return _es_piramidal(pila, true)
 }
 
