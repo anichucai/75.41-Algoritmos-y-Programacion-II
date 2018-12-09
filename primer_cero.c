@@ -33,3 +33,4 @@ int _primer_cero(int arr[], int inicio, int fin){
   
 }  
   
+//Complejidad: a=1; b=2; c= 0 -> log2(1)=0 -> O(logn)
