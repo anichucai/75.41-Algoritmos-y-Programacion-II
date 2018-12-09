@@ -36,3 +36,5 @@ pila_t* pila_partir(pila_t* pila_original, int n){
   return pila_a_devolver;
   
 }
+
+//Complejidad: O(n) n=cantidad de elementos en pila
