@@ -1,4 +1,4 @@
-//EJERCICIO RECURSIVIDAD
+//EJERCICIO DIVISION Y CONQUISTA
 
 /*CONSIGNA: Del primer recuperatorio del parcialito del segundo cuatrimestre de 2012
 Escriba una funci´on recursiva para calcular de forma eficiente la potencia de un n´umero
