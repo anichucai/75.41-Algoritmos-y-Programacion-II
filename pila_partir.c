@@ -1,4 +1,4 @@
-#EJERCICIO PILA
+//EJERCICIO PILA
 
 /*CONSIGNA: Del primer parcialito del segundo cuatrimestre de 2012
 Escribir una funci´on que reciba una pila y un par´ametro n con la cantidad de elementos
