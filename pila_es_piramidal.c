@@ -5,9 +5,7 @@ piramidal si cada elemento es menor a su elemento inferior (en el sentido que va
 el otro extremo). La pila no debe ser modificada al terminar la función.
 Indicar el orden del algoritmo propuesto.*/
 
-bool es_piramidal(pila_t* pila){
-
-  bool res = true;
+bool _es_piramidal(pila_t* pila, bool res){
   
   if(pila_esta_vacia(pila)) return res;
   void* dato = pila_desapilar(pila);
@@ -19,11 +17,15 @@ bool es_piramidal(pila_t* pila){
   
   if( (*(int*)dato) < (*(int*)pila_ver_tope(pila)) ) res = false;
   
-  res &= es_piramidal(pila_t* pila)
+  res &= es_piramidal(pila, res)
   
   pila_apilar(pila,datos);
   
   return res;
+}
+
+bool es_piramidal(pila_t* pila){
+  return _es_piramidal(pila, true)
 }
 
 //Complejidad: O(n), n=cantidad de elementos en pila
