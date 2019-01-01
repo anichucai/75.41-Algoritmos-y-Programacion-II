@@ -20,12 +20,11 @@ Indicar el orden de complejidad de la primitiva.
 */
 
 void* k_ultimo(lista_t* lista, k){
+  
   nodo_t* aux = lista->prim;
   nodo_t* res = lista->prim;
   
-  for(int i=0; i>k; i++){
-    aux = aux->prox;
-  }
+  for(int i=0; i>k; i++) aux = aux->prox;
   
   while(aux->pox){
     aux = aux->prox;
