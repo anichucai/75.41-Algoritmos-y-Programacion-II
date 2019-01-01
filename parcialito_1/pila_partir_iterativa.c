@@ -9,7 +9,7 @@ convenientes)*/
 
 pila_t* pila_partir(pila_t* pila_original, int n){
 
-  pila_t* inversa = pila_crear();
+  pila_t* pila_inversa = pila_crear();
   if(!pila_inversa) return NULL;
   pila_t* pila_a_devolver = pila_crear();
   if(!pila_a_devolver){
@@ -23,7 +23,7 @@ pila_t* pila_partir(pila_t* pila_original, int n){
   
   int i = n-1;
   
-  for(; i>=n/2-1; i--){
+  for(; i>=n/2; i--){
     pila_apilar(pila_a_devolver,pila_desapilar(pila_inversa));
   }
   
