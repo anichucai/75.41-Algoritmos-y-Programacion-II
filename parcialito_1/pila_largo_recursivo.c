@@ -13,7 +13,7 @@ size_t* pila_largo_recursivo(pila_t* pila){
   if (pila_esta_vacia(pila)) return 0;
   
   void* dato = pila_desapilar(pila);
-  size_t largo = largo_pila_recursivo(pila);
+  size_t* largo = largo_pila_recursivo(pila,largo)+1;
   pila_apilar(pila,dato);
   
   return largo;
