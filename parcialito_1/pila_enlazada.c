@@ -1,6 +1,4 @@
-#CONSIGNA
-
-/*Se desea implementar en C el tipo abstracto de datos PIla como una PIla Enlazzada, es deir, con nodos en lugar de un vector dinamico.
+/* CONSIGNA: Se desea implementar en C el tipo abstracto de datos PIla como una PIla Enlazzada, es deir, con nodos en lugar de un vector dinamico.
   a. Definir la o las estructuras que  componen la pila.
   b. Implementar las primitivas: pila_crear, pila_apilar y pila_desapilar usando la estructuras definidas.
 */
@@ -16,6 +14,7 @@ typedef struct nodo_pila{
 typedef struct pila{
   nodo_pila_t* prim;
 } pila_t;
+
 
 // _________ Funciones auxiliares nodo ____________
 
@@ -39,7 +38,8 @@ void* nodo_pila_destruir( nodo_pila_t* nodo){
   return dato;
 }
 
-_______________ Funciones pila _________________
+
+//_______________ Funciones pila _________________
 
 pila_t* pila_crear(){
   
