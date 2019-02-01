@@ -21,11 +21,12 @@ bool _es_magico(inr arr[], int inicio, int fin){
   
   if(arr[medio]>medio){
     _es_magico(arr,inicio,medio-1);
-  if(arr[medio]<medio){
+  }else if(arr[medio]<medio){
     _es_magico(arr,medio+1,fin);
+  } else{
+    return true;
   }
   
-  return true;
 }
 
 // Complejidad:  teorema del maestro
