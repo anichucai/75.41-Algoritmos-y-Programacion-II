@@ -1,0 +1,72 @@
+/*CONSIGNA: Se pide la implementacion del TDA "vector real de N dimensiones",
+definido por el tipo vr_t. Se debe definir la estructura adecuada, e implementar
+la siguiente cuatro primitivas.
+
+//Crear un vector de "n" dimensiones
+vr_t* vr_crear(size_t n);
+
+//Modifica la componente i-enesima del vector con el valor dado
+//(nota: se asigna indice 0 a la primera componente).
+//Devueleve falso si "i" no es una componente valida
+bool vr_modificar componente (vr_t* vector, size_t* i, double valor);
+
+//Devuelve un NUEVO vector con la suma de ambos vectores.
+//Devuelve NULL si 'a' y 'b' no tienen la misma dimension.
+vr_t* vr_sumar(vr_t* a, vr_t* b);
+
+//Libera la memoria del vector.
+void vr_destruir(vr_t* vector);
+
+*/
+
+typedef struct vr{
+    size_t dim;
+    void** datos;
+} vr_t;
+
+
+vr_t* vr_crear(size_t n){
+
+    vr_t* vector = malloc(sizeof(vr_t));
+    if(!vector) return NULL;
+    
+    vector->dim = n;
+    
+    vector->datos = malloc(sizeof(void*)*n);
+    if(!vector->datos){
+      free(vector);
+      return NULL;
+    }
+    
+    return vector;
+}
+
+
+bool vr_modificar componente (vr_t* vector, size_t* i, double valor);
+    
+    if( i >= vector->dim || i<0) return false;
+    
+    vector->datos[i] = valor;
+    return true;
+}
+
+vr_t* vr_sumar(vr_t* a, vr_t* b){
+
+    if(a->dim != b->dim) return NULL;
+    dim = a->dim;
+    
+    c = vr_crear(dim);
+    if(!c) return NULL;
+    
+    for(int i=0; i<dim; i++){
+        c->datos[i] = a->datos[i]+b->datos[i];
+    }
+    
+    return c;
+    
+}
+
+void vr_destruir(vr_t* vector){
+    free(vector->datos);
+    free(vector);
+}
