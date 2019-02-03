@@ -1,0 +1,29 @@
+/*CONSIGNA: cola repartir...*/
+
+cola_t** cola_repartir(cola_t* c, int n){
+
+    cola_t** c_procesos = malloc(sizeof(cola_t*)*n);
+    if(!c_procesos) return;
+    
+    for(int i=0; i<n; i++){
+        c_procesos[i] = cola_crear();
+        if (!c_procesos[i]){
+            while(i>=0){
+                cola_destruir(c_procesos[i]);
+                i--;
+            }
+            return;
+        }
+    }
+    
+    for(int i=0; !cola_esta_vacia(c); i = (i+1)%n){
+        cola_encolar(c_procesos[i], cola_desencolar(c));
+    }
+    
+    cola_destruir(c);
+    
+    return c_procesos;
+    
+}
+    
+   
