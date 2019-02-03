@@ -22,11 +22,10 @@ int lista_borrar_menores(lista_t* lista, int valor){
     if (act->dato<valor){
         if (max<act->dato) max=act->dato;
         ant->prox=act->prox;
-        act = act->prox;
     } else {
         ant = ant->prox;
-        act = act->prox;
     }
+    act = act->prox;
   }
   
   return (max==valor) ? -1 : max;
