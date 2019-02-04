@@ -5,9 +5,8 @@
 // Funciones del alumno.
 
 void vector_destruir(vector_t* vector){
-    size_t *tam = &vector->tam;
-	free(vector->datos);
-    free(tam);
+    free(vector->datos);
+    free(vector);
 }
 
 bool vector_obtener(vector_t* vector, size_t pos, int* valor){
