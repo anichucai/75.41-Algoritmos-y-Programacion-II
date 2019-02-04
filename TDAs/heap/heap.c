@@ -152,7 +152,7 @@ bool heap_esta_vacio(const heap_t* heap){
 }
 
 
-heap_t* _heap_crear(cmp_func_t cmp, size_t capacidad){
+heap_t* heap_crear(cmp_func_t cmp, size_t capacidad){
 
 	heap_t* heap = malloc(sizeof(heap_t));
 	if(!heap) return NULL;
@@ -168,10 +168,6 @@ heap_t* _heap_crear(cmp_func_t cmp, size_t capacidad){
 	heap->cmp = cmp;
 
 	return heap;
-}
-
-heap_t* heap_crear(cmp_func_t cmp){
-	return _heap_crear(cmp, TAM_INICIAL);
 }
 
 
