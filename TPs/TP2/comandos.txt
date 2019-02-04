@@ -1,0 +1,12 @@
+agregar_archivo vuelos-algueiza-parte-01.csv
+ver_tablero 100 asc 2018-00-00T00:00:00 2019-00-00T00:00:00
+borrar 2018-00-00T00:00:00 2019-00-00T00:00:00
+agregar_archivo vuelos-algueiza-parte-01.csv
+ver_tablero 100 asc 2018-00-00T00:00:00 2019-00-00T00:00:00
+ver_tablero 100 desc 2018-00-00T00:00:00 2019-00-00T00:00:00
+prioridad_vuelos 100
+borrar 2018-00-00T00:00:00 2019-00-00T00:00:00
+agregar_archivo vuelos-algueiza-parte-02.csv
+agregar_archivo vuelos-algueiza-parte-03.csv
+ver_tablero 100 asc 2018-00-00T00:00:00 2019-00-00T00:00:00
+borrar 2018-00-00T00:00:00 2019-00-00T00:00:00
