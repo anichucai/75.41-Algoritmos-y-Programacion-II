@@ -21,5 +21,7 @@ int raiz(unsigned int n){
 
 /* Orden:
 	si a = 1 , b = 2 y c = 0
-	(logb(a) = 0) == (c = 0) -> O((n^c)log(n)) 
+	(logb(a) = 0) == (c = 0) -> O((n^c)log(n))
+	
+	Complejidad: log(n)
 */
