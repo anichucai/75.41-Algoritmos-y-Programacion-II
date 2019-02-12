@@ -1,17 +1,16 @@
-"""Primer Final
+------------------------------------------------Primer Final--------------------------------------------------------------
 
-1-Aplicar división y conquista para calcular la raíz cuadrada entera de un número entero. Calcular el orden del algoritmo propuesto.
+1-Aplicar división y conquista para calcular la raíz cuadrada entera de un número entero. Calcular el orden del algoritmo propuesto. DONE
 
-2- Se tiene una secuencia de n pares de la forma (número,color), ordenada por número, y donde color pertenece al conjunto {Rojo, Verde, Azul}. Escribir un algoritmo O(n) que deje todos los rojos, luego todos los verdes, y luego todos los azules, pero donde los números dentro de cada color siga ordenado: (por ejemplo (A,1),(R,2),(R,3),(A,4)→(R,2),(R,3),(A,1),(A,4)). Codificarlo en C.
+2- Se tiene una secuencia de n pares de la forma (número,color), ordenada por número, y donde color pertenece al conjunto {Rojo, Verde, Azul}. Escribir un algoritmo O(n) que deje todos los rojos, luego todos los verdes, y luego todos los azules, pero donde los números dentro de cada color siga ordenado: (por ejemplo (A,1),(R,2),(R,3),(A,4)→(R,2),(R,3),(A,1),(A,4)). Codificarlo en C. DONE
 
 3- a) Un arreglo en orden descendiente es siempre un heap de máx? Justificar.
+b) Un arbol binario de búsqueda completo es también un heap de máximo? Justificar. DONE
 
-b) Un arbol binario de búsqueda completo es también un heap de máximo? Justificar
-
-4-Escriba el algoritmo de recorrido en DFS de un grafo no dirigido y muestre su complejidad. Calcule el arbol de recorrido DFS del grafo 1 (estaba en el pizzarron).
+4-Escriba el algoritmo de recorrido en DFS de un grafo no dirigido y muestre su complejidad. Calcule el arbol de recorrido DFS del grafo 1 (estaba en el pizzarron). DONE
 
 
-Segundo Final
+------------------------------------------------Segundo Final--------------------------------------------------------------
 
 1. Escribir usando programación dinámica una función cuantosCaminos(n, m) que cuenta por cuántos caminos diferentes se puede ir del punto (n, m) al punto (0, 0) sobre una grilla de enteros no negativos, sabiendo que sólo se pueden dar pasos hacia abajo y hacia la izquierda. Calcular el orden.
 
@@ -26,7 +25,7 @@ link next;
 que se recibe un puntero “list” de tipo link que apunta al primer nodo de la lista, y que el último nodo apunta a NULL..
 
 
-Tercer final
+------------------------------------------------Tercer Final--------------------------------------------------------------
 
 1. Escribir en C un fragmento de código para borrar el segundo nodo de la lista. Suponer que hay al menos dos nodos en la lista.
 
@@ -37,7 +36,7 @@ Tercer final
 4. Escribir una función buscarEnRango que recibe un árbol binario de búsqueda t y dos números enteros n y m, y devuelve una lista con los valores de las claves de t que son mayores o iguales que n y menores o iguales que m. La búsqueda debe ser inteligente, no se debe recorrer el árbol entero y luego podar la lista, sino que se deben visitar exclusivamente las ramas necesarias del árbol.
 
 
-Cuarto Final
+------------------------------------------------Cuarto Final--------------------------------------------------------------
 
 1 - Escribir una funcion que reciba un arreglo de N números reales e informe los índices de dos números que estén entre sí a mínima distancia. El orden tiene que ser O(N log N). Justificar el orden.
 
@@ -48,7 +47,7 @@ Cuarto Final
 4 - Escribir el algoritmo que calcula un orden topologico para un grafo dirigido. Justificar el orden. Aplicarlo al grafo G. (G era un grafo que dibujo en el pizarron, pero no lo tengo)
 
 
-Quinto Final
+------------------------------------------------Quinto Final--------------------------------------------------------------
 
 1) Diseñar y programar en C una función que dado un árbol binario imprima todos los caminos que van de la raiz a cada una de las hojas.
 
@@ -65,14 +64,14 @@ Quinto Final
 *El algoritmo C resuelve un problema de tamaño N dividiéndolo en nueve subproblemas de tamaño N/3, resolviendo cada subproblema recursivamente y luego combinando las soluciones en tiempo O(N^2)
 
 
-Sexto Final
+------------------------------------------------Sexto Final--------------------------------------------------------------
 
 1 - Diseñar y escribir una función en C que dados dos árboles binarios devuelva verdadero o falso según si los dos árboles son idénticos o no (un árbol es idéntico a otro si tienen no sólo los mismos valores en los nodo sino también la misma estructura). Pista: piensen recursivamente.
 
 2 - Tienen que elegir entre estos tres algoritmos para resolver el mismo problema. Justificar la elección mostrando cuales son los órdenes de ejecución de cada uno (en notación O): El algoritmo A resuelve los problemas de tamaño N dividiéndolos en tres subproblemas de tamaño N/2, resolviendo recursivamente cada subproblema, y combinando las soluciones en tiempo cuadrático. El algoritmo B resuelve un problema de tamaño N eligiendo un subproblema de tamaño N-1 en tiempo O(N) y luego resolviendo recursivamente ese subproblema. El algoritmo C resuelve los problemas de tamaño N dividiéndolos en cuatro subproblemas de tamaño N/2, resolviendo recursivamente cada subproblema, y combinando las soluciones en tiempo lineal. 3 - Resolver por backtracking el siguiente problema: dados X[1], X[2], …, X[N] en teros positivos y T un entero, ¿existe un subconjunto de los X[i] tales que su suma sea exactamente igual a T? 4 - Escribir un algoritmo que dado un grafo dirigido y un vértice v de dicho grafo, encuentre todos los vértices del grafo accesibles desde v. El algoritmo tiene que ser O(|V| + |A|). Justificar el orden y aplicarlo a G1 y al vértice 1.
 
 
-Séptimo Final
+------------------------------------------------Septimo Final--------------------------------------------------------------
 
 1. Diseñar y escribir una función en C que dados dos árboles binarios devuelva verdadero o falso según si los dos árboles tienen el mismo recorrido en Inorden o no.
 
