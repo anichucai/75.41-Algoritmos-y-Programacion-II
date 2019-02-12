@@ -18,3 +18,8 @@ int raiz(unsigned int n){
 	return _raiz(n,0,n);
   
 }
+
+/* Orden:
+	si a = 1 , b = 2 y c = 0
+	(logb(a) = 0) == (c = 0) -> O((n^c)log(n)) 
+*/
