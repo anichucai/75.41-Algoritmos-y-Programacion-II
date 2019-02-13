@@ -1,0 +1,50 @@
+TEOREMA MAESTRO
+
+A) Tienen que elegir entre estos tres algoritmos para resolver el mismo problema. Justificar la elección mostrando cuáles son los órdenes de ejecución de cada uno (en notación O):
+
+*El algoritmo A resuelve un problema de tamaño N dividiéndolo en cinco subproblemas de tamaño N/2, resolviendo cada subproblema recursivamente y luego combinando las soluciones en tiempo lineal.
+a=5
+b=2
+c=1
+[logb(a)=2,32]>[c=1]
+O(n²)
+
+*El algoritmo B resuelve un problema de tamaño N resolviendo recursivamente dos subproblemas de tamaño N-1 y luego combinando las soluciones en tiempo constante.
+a=2
+b=1
+c=0
+[log1(2)<0]
+O(n)
+
+*El algoritmo C resuelve un problema de tamaño N dividiéndolo en nueve subproblemas de tamaño N/3, resolviendo cada subproblema recursivamente y luego combinando las soluciones en tiempo O(N^2)
+a=9
+b=3
+c=2
+[log3(9)==2] -> n²log(n)
+
+Luego el mejor algoritmo es el primero
+
+B) Tienen que elegir entre estos tres algoritmos para resolver el mismo problema. Justificar la elección mostrando cuales son los órdenes de ejecución de cada uno (en notación O):
+
+ El algoritmo A resuelve los problemas de tamaño N dividiéndolos en tres subproblemas de tamaño N/2, resolviendo recursivamente cada subproblema, y combinando las soluciones en tiempo cuadrático.
+a= 3
+b= 2
+c= 2
+log2(3) = 1,58<2
+O(n²)
+
+El algoritmo B resuelve un problema de tamaño N eligiendo un subproblema de tamaño N-1 en tiempo O(N) y luego resolviendo recursivamente ese subproblema. 
+a= 1
+b= 1 
+c= 1
+log1(1)=0<1
+O(n)
+
+El algoritmo C resuelve los problemas de tamaño N dividiéndolos en cuatro subproblemas de tamaño N/2, resolviendo recursivamente cada subproblema, y combinando las soluciones en tiempo lineal.
+a=4
+b=2
+c=1
+log2(4)=2>1
+O(n²)
+
+El mejor algoritmo es el segundo
