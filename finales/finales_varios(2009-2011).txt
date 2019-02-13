@@ -16,14 +16,6 @@ b) Un arbol binario de búsqueda completo es también un heap de máximo? Justif
 
 2. La moda de una secuencia de números es el valor que se repite con mayor frecuencia en la secuencia. Escribir un algoritmo O(N log N) para calcular la moda de una secuencia. Justificar el orden.
 
-3. Supongan que una lista enlazada está formada por nodos del tipo
-typedef struct node* link;
-struct node
-int key;
-link next;
-} ;
-que se recibe un puntero “list” de tipo link que apunta al primer nodo de la lista, y que el último nodo apunta a NULL..
-
 
 ------------------------------------------------Tercer Final--------------------------------------------------------------
 
@@ -66,9 +58,11 @@ que se recibe un puntero “list” de tipo link que apunta al primer nodo de la
 
 ------------------------------------------------Sexto Final--------------------------------------------------------------
 
-1 - Diseñar y escribir una función en C que dados dos árboles binarios devuelva verdadero o falso según si los dos árboles son idénticos o no (un árbol es idéntico a otro si tienen no sólo los mismos valores en los nodo sino también la misma estructura). Pista: piensen recursivamente.
+1 - Diseñar y escribir una función en C que dados dos árboles binarios devuelva verdadero o falso según si los dos árboles son idénticos o no (un árbol es idéntico a otro si tienen no sólo los mismos valores en los nodo sino también la misma estructura). Pista: piensen recursivamente. DONE
 
-2 - Tienen que elegir entre estos tres algoritmos para resolver el mismo problema. Justificar la elección mostrando cuales son los órdenes de ejecución de cada uno (en notación O): El algoritmo A resuelve los problemas de tamaño N dividiéndolos en tres subproblemas de tamaño N/2, resolviendo recursivamente cada subproblema, y combinando las soluciones en tiempo cuadrático. El algoritmo B resuelve un problema de tamaño N eligiendo un subproblema de tamaño N-1 en tiempo O(N) y luego resolviendo recursivamente ese subproblema. El algoritmo C resuelve los problemas de tamaño N dividiéndolos en cuatro subproblemas de tamaño N/2, resolviendo recursivamente cada subproblema, y combinando las soluciones en tiempo lineal. 3 - Resolver por backtracking el siguiente problema: dados X[1], X[2], …, X[N] en teros positivos y T un entero, ¿existe un subconjunto de los X[i] tales que su suma sea exactamente igual a T? 4 - Escribir un algoritmo que dado un grafo dirigido y un vértice v de dicho grafo, encuentre todos los vértices del grafo accesibles desde v. El algoritmo tiene que ser O(|V| + |A|). Justificar el orden y aplicarlo a G1 y al vértice 1.
+2 - Tienen que elegir entre estos tres algoritmos para resolver el mismo problema. Justificar la elección mostrando cuales son los órdenes de ejecución de cada uno (en notación O): El algoritmo A resuelve los problemas de tamaño N dividiéndolos en tres subproblemas de tamaño N/2, resolviendo recursivamente cada subproblema, y combinando las soluciones en tiempo cuadrático. El algoritmo B resuelve un problema de tamaño N eligiendo un subproblema de tamaño N-1 en tiempo O(N) y luego resolviendo recursivamente ese subproblema. El algoritmo C resuelve los problemas de tamaño N dividiéndolos en cuatro subproblemas de tamaño N/2, resolviendo recursivamente cada subproblema, y combinando las soluciones en tiempo lineal.
+3 - Resolver por backtracking el siguiente problema: dados X[1], X[2], …, X[N] enteros positivos y T un entero, ¿existe un subconjunto de los X[i] tales que su suma sea exactamente igual a T?
+4 - Escribir un algoritmo que dado un grafo dirigido y un vértice v de dicho grafo, encuentre todos los vértices del grafo accesibles desde v. El algoritmo tiene que ser O(|V| + |A|). Justificar el orden y aplicarlo a G1 y al vértice 1.
 
 
 ------------------------------------------------Septimo Final--------------------------------------------------------------
